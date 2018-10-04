@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+    - "8"
+os:
+  - linux
+branches:
+  except:
+  - master
+install:
+  - npm install
+script:
+  - npm test
+notifications:
+  email: true
