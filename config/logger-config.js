@@ -1,13 +1,15 @@
-'use strict';
 const winston = require('winston');
 const fs = require('fs');
+
 const tsFormat = () => (new Date()).toLocaleDateString() + ' - ' + (new Date()).toLocaleTimeString();
 const logDir = 'logs';
 
+//Create logs folder if not exists
 if (!fs.existsSync(logDir)) {
     fs.mkdirSync(logDir);
 }
 
+//winston log level configuration
 const config = {
     levels: {
         error: 0,
