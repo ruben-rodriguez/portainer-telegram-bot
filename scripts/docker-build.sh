@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Example use 
+#  sudo ./scripts/docker-build.sh "-e BOT_TOKEN=abc -e TELEGRAM_USERS=efg"
+
 # Stop any running containers
 docker stop portainer-telegram-bot
 
@@ -10,7 +13,7 @@ docker rm portainer-telegram-bot
 docker rmi ermus19/portainer-telegram-bot:latest
 
 # Build image with Dockerfile
-docker build -t ermus19/portainer-telegram-bot:latest . 
+docker build --no-cache -t ermus19/portainer-telegram-bot:latest . 
 
 # Run container from image
-docker run -d -it --name=portainer-telegram-bot -e BOT_TOKEN=$1 ermus19/portainer-telegram-bot:latest
+docker run -d -it --network="host" --name=portainer-telegram-bot $1 ermus19/portainer-telegram-bot:latest
