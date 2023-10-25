@@ -42,7 +42,7 @@
 Clone this repository:
 
 ```sh
-$: git clone https://github.com/ermus19/portainer-telegram-bot
+$: git clone https://github.com/ruben-rodriguez/portainer-telegram-bot
 ```
 
 Install dependencies:
@@ -62,7 +62,7 @@ $: npm test
 Clone this repository:
 
 ```sh
-$: git clone https://github.com/ermus19/portainer-telegram-bot
+$: git clone https://github.com/ruben-rodriguez/portainer-telegram-bot
 ```
 
 Install dependencies:
@@ -81,7 +81,7 @@ $: npm start
 Clone this repository:
 
 ```sh
-$: git clone https://github.com/ermus19/portainer-telegram-bot
+$: git clone https://github.com/ruben-rodriguez/portainer-telegram-bot
 ```
 
 Leverage `docker-build.sh` tool. Follows example usage:
